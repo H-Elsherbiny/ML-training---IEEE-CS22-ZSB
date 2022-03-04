@@ -47,8 +47,7 @@ def main():
     
     for i in range(100000):
         theta0, theta1 = gradient_descent(theta0, theta1, alpha)
-    print(cost(theta0, theta1), theta0, theta1)
-    
+    print("Theta0: ", theta0, "\nTheta1: ", theta1)
     plt.plot(points[0], points[1], "x")
     result = [hypothesis(theta0, theta1, x) for x in points[0]]
     
